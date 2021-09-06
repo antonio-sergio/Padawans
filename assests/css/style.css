@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Josefin+Sans&family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #5f3493;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 6vh;
+    background-color: #49215c;
+}
+
+header img{
+    width: 200px;
+}
+
+a{
+    text-decoration: none;
+}
+
+table tr, td{
+    border: 1px solid white;
+    
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/*menu inicial*/
+.panel{
+    width: 40vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30vh auto;
+    background-color: white;
+    color: #5F3473;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*Css dos posts*/
+.allPosts{
+   width: 100vw;
+   height: 100vh;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.post {
+    width: 30%;
+    height: 20vh;
+    padding: 10px;
+    border: 1px solid #3b154d;
+    margin: 10px;
+    color: white;
+}
+
+.post-title{
+    text-align: center;
+}
+
+.headers{
+    width: 100vw;
+    height: 5vh;
+    background-color: white;
+    color: #5F3473;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#table {
+   padding-top: 6vh;
+   color: white;
+   font-weight: 400;
+   border: 1px;
+}
+
+#table td{
+    padding: 10px;
+}
+
+/*Css das fotos*/
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.photos img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+    padding-top: 100px;
+}
+
+.photos img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+/*Header criado atráves do js*/
+.header{
+    width: 100vw;
+    height: 5vh;
+    background-color: white;
+    color: #5F3473;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+
+/*albums*/
+.container-albums {
+    display: flex;
+    justify-content: center;
+    margin: 20vh auto;
+}
+
+.container-albums a{
+    color: white;
+}
+
+.container-albums h3 {
+    position: fixed;
+    top: 30px;
+    left: 100px;
+}
+
+#table-albums {
+    color: white;
+}
+/*todos*/
+
+.container-todos{
+    display: flex;
+    justify-content: center;
+    margin: 6vh auto;
+}
+
+#table-todos {
+    color: white;
+}
