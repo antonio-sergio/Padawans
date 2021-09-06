@@ -121,7 +121,6 @@ const showAlbum = (id) => {
     listPhotos.innerHTML = "";
     menuh3.innerHTML = "";
     listAlbuns.innerHTML = "";
-
     let header = document.createElement("div");
     header.classList.add("header")
     let text = `<a  href="albums.html">Voltar ao menu Albums</a> `;
