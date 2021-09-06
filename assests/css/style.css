@@ -23,9 +23,8 @@ a{
     text-decoration: none;
 }
 
-table tr, td{
+table tr, td {
     border: 1px solid white;
-    
 }
 
 table {
@@ -84,7 +83,7 @@ table {
    padding-top: 6vh;
    color: white;
    font-weight: 400;
-   border: 1px;
+  
 }
 
 #table td{

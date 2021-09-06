@@ -34,7 +34,7 @@ const getPost2 = async () => {
     const posts = await getContent("posts");
     const postTemplate = posts.map(({id, title, body }) => `
     
-    <tr >
+    <tr>
         <td>${id}</td>
         <td>${title}</td>
         <td>${body}</td>
@@ -47,7 +47,6 @@ const getPost2 = async () => {
 
     postsItems.innerHTML += postTemplate;
 }
-
 
 
 getPost2();
@@ -81,7 +80,7 @@ const getAlbum = async () => {
         <tr>
             <td>${id}</td>
             <td>${title}</td>
-            <td><a id="${id}" onclick="showGalerry(${id})" href="#album${id}">Visualizar Album</a> </td>
+            <td><a  onclick="showAlbum(${id})" id="${id}" href="#album${id}">Click 2x</a> </td>
         </tr>
     `).join(" ");
 
@@ -112,9 +111,8 @@ const getTodos = async () => {
 
 getTodos()
 
-//Limpar tela e mostrar a galeria escolhida
-const showGalerry = (id) => {
-
+//limpar tela e mostrar galeria
+const showAlbum = (id) => {
     let listPhotos = document.querySelector(".listPhotos");
     let albums = document.querySelector(".albums");
     let menuh3 = document.querySelector("#menu-h3");
@@ -128,7 +126,6 @@ const showGalerry = (id) => {
     header.classList.add("header")
     let text = `<a  href="albums.html">Voltar ao menu Albums</a> `;
     header.innerHTML = text;
-
     let body = document.querySelector("body")
     body.appendChild(header)
     getPhotos(id)
